@@ -1,0 +1,19 @@
+:root {
+  --bg: #f7f7f7;
+  --fg: #535353;
+  color-scheme: light;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Matches the game's dark palette; the game overrides --bg/--fg inline while it runs. */
+:root[data-theme='dark'] {
+  --bg: #080808;
+  --fg: #acacac;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+}
